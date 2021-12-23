@@ -113,27 +113,27 @@ header{
 }
 .carousel-img{
     display: block;
-    background-image: url("../../img/pic-five.jpg");
-    height: 85vh;
+    background-image: url("../../img/bg-alim.jpg");
+    height: 82vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .carousel-img-1{
-    background-image: url("../../img/pic-one.jpg");
+    background-image: url("../../img/bg-antrop.jpg");
 }
 .carousel-img-2{
-    background-image: url("../../img/pic-two.jpg");
+    background-image: url("../../img/bg-plants.jpg");
 }
 .carousel-img-3{
-    background-image: url("../../img/pic-three.jpg");
+    background-image: url("../../img/bg-recipe.jpg");
 }
 .carousel-img-4{
-    background-image: url("../../img/pic.jpg");
+    background-image: url("../../img/bg-treatm.jpg");
 }
 .carousel-caption{
     background-color: rgba(0, 0, 0, 0.2);
-    top: 15%;
+    top: 12%;
     bottom: 15%;
     right: 12%;
     left: 12%;
