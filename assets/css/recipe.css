@@ -48,6 +48,10 @@
 .recipe-unit:active{
     border: 5px solid red;
 }
+.recipe-unit:focus{
+    border: 5px solid blue;
+    transform: scale(1.1);
+}
 .recipe-unit-img{
     width: 100%;
 }

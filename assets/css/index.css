@@ -114,7 +114,7 @@ header{
 .carousel-img{
     display: block;
     background-image: url("../../img/bg-alim.jpg");
-    height: 82vh;
+    height: 80vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -134,7 +134,7 @@ header{
 .carousel-caption{
     background-color: rgba(0, 0, 0, 0.2);
     top: 12%;
-    bottom: 15%;
+    /* bottom: 15%; */
     right: 12%;
     left: 12%;
     backdrop-filter: blur(10px);
@@ -245,6 +245,9 @@ footer{
         transform: scaleY(1);
         transform-origin: top;  
     }
+    .carousel-img{
+        height: 86vh;
+    }
     .carousel-caption{
         top: 20%;
         bottom: 20%;
@@ -286,7 +289,7 @@ footer{
     }
     .footer-icon{
         margin-top: 2rem;
-        width: 11%;
+        width: 10%;
     }
     footer{
         padding: 1rem;
