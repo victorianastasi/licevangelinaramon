@@ -1,0 +1,102 @@
+.section-title{
+    margin: 2rem 0;
+    text-align: center;
+    font-weight: 600;
+    background-image: linear-gradient(to right, rgb(177, 212, 169), rgb(252, 206, 170), rgb(237, 152, 19), rgb(252, 206, 170), rgb(84,188,65), rgb(177, 212, 169));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 500%;
+    background-position: -100%;
+    animation: animatedTitle infinite 10s linear alternate-reverse;
+}
+.section-subtitle{
+    text-align: center;
+    text-shadow: 5px 5px 5px rgb(226, 217, 208);
+    color: rgb(75, 68, 62);
+    font-weight: 600;
+    border-bottom: 5px dotted rgb(226, 217, 208);
+    padding-bottom: 1rem;
+    border-top: 5px dotted rgb(226, 217, 208);
+    padding-top: 1rem;
+}
+.recipes{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+    width: 100%;
+}
+.recipe-unit{
+    flex-basis: 45%;
+    position: relative;
+    margin: 1rem 0.25rem;
+    border: 5px solid rgb(226, 217, 208);
+    background-image: linear-gradient(to bottom, white, rgb(226, 217, 208));
+}
+/* testing */
+.recipe-unit:focus{
+    transform: scale(1.2);
+    border: 8px solid transparent;
+    box-shadow: 0px 5px 10px rgb(170, 170, 170);
+}
+.recipe-unit:focus .recipe-unit-text, .recipe-unit:focus .recipe-unit-text p{
+    background-color: transparent;
+    color: transparent;
+}
+.recipe-unit:active{
+    border: 5px solid red;
+}
+.recipe-unit-img{
+    width: 100%;
+}
+.recipe-unit-text{
+    height: 60px;
+    display: grid;
+    place-content: center;
+}
+.recipe-unit-text p{
+    margin: auto 0;
+    text-align: center;
+    font-size: 0.8rem;
+}
+@media screen and (min-width: 768px){
+    .recipe-unit{
+        flex-basis: 30%;
+    }
+}
+@media screen and (min-width: 992px){
+    .recipes{
+        margin: 1rem auto;
+        width: 80%;
+    }
+    .recipe-unit{
+        flex-basis: 30%;
+        border: 8px solid rgb(226, 217, 208);
+        transition: all .4s ease-in-out;
+    }
+    .recipe-unit-text{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(226, 217, 208, 0.8);
+        transition: all .4s ease-in-out;
+    }
+    .recipe-unit-text p{
+        color: rgb(36, 36, 35);
+        font-size: 0.9rem;
+        font-weight: 600;
+        transition: all .4s ease-in-out;
+    }
+    .recipe-unit:hover{
+        transform: scale(1.2);
+        border: 8px solid rgb(255, 243, 234);
+        box-shadow: 0px 5px 10px rgb(170, 170, 170);
+    }
+    .recipe-unit:hover .recipe-unit-text, .recipe-unit:hover .recipe-unit-text p{
+        background-color: transparent;
+        color: transparent;
+    }
+    
+}

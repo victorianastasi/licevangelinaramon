@@ -1,0 +1,294 @@
+body{
+    font-family: 'Raleway', sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    color: rgb(36, 36, 35);
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+::-moz-selection{
+    background-color: rgb(255,228,207);
+    color: black;
+}
+::selection{
+    background-color: rgb(255,228,207);
+    color: black;
+}
+a:visited, a:link{
+    text-decoration: none;
+    color: inherit;
+    font-weight: inherit;
+}
+.primaryText{
+    font-family: 'Arvo', serif;
+}
+@keyframes animatedTitle{
+    to{
+      background-position: 100%; 
+    }
+}
+header{
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+.navbar{
+    padding: 0;
+}
+.navbar-brand{
+    text-align: inherit;
+    padding: 0;
+}
+.nav-img{
+    width: 60%;
+}
+.nav-menu{
+    font-family: 'Arvo', serif;
+    background-color: rgb(255,255,255);
+}
+.navbar-nav{
+    align-items: center;
+    padding: 0;
+}
+.nav-item{
+    width: 90%;
+    height: 64px;
+    margin: 0.75rem 0.25rem;
+    background-color: transparent;
+    border: 3px solid rgb(255,255,255);
+    display: grid;
+    place-content: center;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.nav-item:hover{
+    background-color: rgb(255,255,255);
+    background-image: none;
+    border: 3px solid rgb(252, 206, 170);
+}
+.offcanvas-end{
+    width: 80%;
+}
+.offcanvas-body{
+    background-color: rgb(255,228,207);
+}
+.offcanvas-header{
+    padding: 2rem 1rem;
+}
+.offcanvas-title{
+    color: rgb(136, 124, 112);
+    text-shadow: 3px 3px 5px rgb(188, 188, 188);
+}
+.btnTop{
+    color: white;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    padding: 0.5rem 1rem;
+    background-color: rgba(84,188,65, 0.8);
+}
+.btnTop-icon{
+    color: white;
+    font-size: 1.2rem;
+}
+.btnTop:hover{
+    background-color: rgb(84,188,65);
+}
+.btnTop:visited{
+    background-color: rgba(84,188,65, 0.8);
+}
+.highlight-color{
+    color: rgb(237, 152, 19);
+    font-weight: 600;
+    font-family: 'Arvo', serif;
+}
+.highlight{
+    font-weight: 600;
+    font-family: 'Arvo', serif;
+}
+.carousel-img{
+    display: block;
+    background-image: url("../../img/pic-five.jpg");
+    height: 85vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.carousel-img-1{
+    background-image: url("../../img/pic-one.jpg");
+}
+.carousel-img-2{
+    background-image: url("../../img/pic-two.jpg");
+}
+.carousel-img-3{
+    background-image: url("../../img/pic-three.jpg");
+}
+.carousel-img-4{
+    background-image: url("../../img/pic.jpg");
+}
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 15%;
+    bottom: 15%;
+    right: 12%;
+    left: 12%;
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    border: 1px dotted rgba(255, 255, 255, 0.1);
+    border: 5px solid rgba(255, 255, 255, 0.75);
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+.carousel-caption-content{
+    display: block;
+    margin: auto 0;
+    padding: 2rem 1rem;
+}
+.carousel-caption-title{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+/* .carousel-indicators [data-bs-target]{
+    background-color: rgb(255,228,207);
+} */
+footer{
+    background-image: url("../../img/bg-footer.jpg");
+    height: inherit;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3rem 1rem 1rem 1rem;
+    text-align: center;
+    color: black;
+}
+.footer-info-icons{
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+}
+.footer-icon{
+    width: 15%;
+    margin: 0 2rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    transition: all 0.3s;
+}
+.footer-icon:hover{
+    transform: scale(1.2);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.footer-map{
+    width: 90%;
+}
+.footer-text-map{
+    margin: 2rem 0 1rem 0;
+}
+.footer-text-small{
+    font-size: 0.7rem;
+    margin-top: 2rem;
+}
+@media screen and (min-width: 576px){
+    .footer-icon{
+        width: 10%;
+    }
+}
+@media screen and (min-width: 768px){
+    .footer-icon{
+        width: 8%;
+    }
+}
+@media screen and (min-width: 992px){
+    .navbar-brand{
+        text-align: center;
+    }
+    .offcanvas-body{
+        background-color: rgb(255,255,255);
+    }
+    .nav-item{
+        width: 180px;
+        height: 64px;
+        margin: 0 0.25rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border: none;
+        transition: none;
+        z-index: 1;
+    }
+    .nav-item:hover{
+        background-color: transparent;
+        background-image: none;
+        border: none;
+    }
+    .nav-item::before{
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to top, rgb(252, 248, 245), rgb(255,228,207));
+        transform: scaleY(0);
+        transition: transform .4s;
+        z-index: -1;
+    }
+    .nav-item:hover::before{
+        transform: scaleY(1);
+        transform-origin: top;  
+    }
+    .carousel-caption{
+        top: 20%;
+        bottom: 20%;
+        right: 15%;
+        left: 15%;
+    }
+    .carousel-caption-title{
+        font-size: 2.5rem;
+    }
+    .carousel-caption-text{
+        width: 60%;
+        margin: 1rem auto 0 auto;
+        font-size: 1.1rem;
+    }
+    .btnTop{
+        color: white;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        display: none;
+        padding: 0.75rem 1.25rem;
+        background-color: rgba(84,188,65, 0.8);
+    }
+    .btnTop-icon{
+        color: white;
+        font-size: 1.4rem;
+    }
+    .footer-info{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+    .footer-info-icons, .footer-info-maps{
+        width: 40%;
+    }
+    .footer-map{
+        width: 100%;
+    }
+    .footer-icon{
+        margin-top: 2rem;
+        width: 11%;
+    }
+    footer{
+        padding: 1rem;
+    }
+}
