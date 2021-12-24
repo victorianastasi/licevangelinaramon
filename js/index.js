@@ -1,8 +1,6 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-    console.log('DOM fully loaded and parsed');
     
     let btnTop = document.getElementById("btnTop");
-    console.log(btnTop)
 
     window.onscroll = function() {scrollFunction()};
 
@@ -15,7 +13,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
 
     btnTop.addEventListener('click', () => {
-        console.log("funca")
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     });

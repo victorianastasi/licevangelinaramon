@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-    console.log('All assets are loaded');
+    
     let idPlatos = "platos";
     let idDesayunos = "desayunos";
 
@@ -52,4 +52,4 @@ window.addEventListener('DOMContentLoaded', (event) => {
     showRecipes(platos, idPlatos);
     showRecipes(desayunos, idDesayunos);
 
-  });
+});

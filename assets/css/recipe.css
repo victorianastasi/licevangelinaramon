@@ -36,21 +36,14 @@
     background-image: linear-gradient(to bottom, white, rgb(226, 217, 208));
 }
 /* testing */
-.recipe-unit:focus{
+.recipe-unit:active{
     transform: scale(1.2);
     border: 8px solid transparent;
     box-shadow: 0px 5px 10px rgb(170, 170, 170);
 }
-.recipe-unit:focus .recipe-unit-text, .recipe-unit:focus .recipe-unit-text p{
+.recipe-unit:active .recipe-unit-text, .recipe-unit:active .recipe-unit-text p{
     background-color: transparent;
     color: transparent;
-}
-.recipe-unit:active{
-    border: 5px solid red;
-}
-.recipe-unit:focus{
-    border: 5px solid blue;
-    transform: scale(1.1);
 }
 .recipe-unit-img{
     width: 100%;
