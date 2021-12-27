@@ -21,6 +21,8 @@
 }
 .treatment-title{
     margin-bottom: 1rem;
+    letter-spacing: 2px;
+    font-size: 1.8rem;
 }
 .treatment-section-text h6{
     margin: 0 0 2rem 0;
@@ -49,6 +51,7 @@
     }
     .treatment-title{
         margin-top: 3rem;
+        font-size: 2.1rem;
     }
     .treatment-section-text p{
         padding: 1.5rem 2rem;
