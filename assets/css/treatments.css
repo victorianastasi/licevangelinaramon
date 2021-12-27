@@ -1,0 +1,48 @@
+.treatment-section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    background-image: linear-gradient(to bottom, rgba(255,228,207, 0.3), rgba(255,228,207, 0.05));
+}
+.treatment-section-img{
+    flex-basis: 100%;
+    height: 200px;
+    background-image: url("../../img/treatment.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 10px dotted white;
+}
+.treatment-section-text{
+    padding: 0rem 2rem 2rem 2rem;
+    text-align: center;
+}
+.treatment-section-text p{
+    padding: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: rgb(90,90,90);
+    box-shadow: 3px 3px 3px rgba(136, 124, 112,0.4);
+}
+.treatment-section-text p:nth-child(odd){
+    background-image: linear-gradient(to right, transparent, rgba(136, 124, 112,0.2));
+}
+.treatment-section-text p:nth-child(even){
+    background-image: linear-gradient(to left, transparent, rgba(136, 124, 112,0.2));
+}
+@media screen and (min-width: 992px){
+    .treatment-section{
+        padding-bottom: 0;
+    }
+    .treatment-section-img{
+        height: 400px;
+    }
+    .treatment-title{
+        margin-top: 3rem;
+    }
+    .treatment-section-text p{
+        padding: 1.5rem 2rem;
+    }
+}

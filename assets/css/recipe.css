@@ -1,8 +1,12 @@
 .section-title{
-    margin: 2rem 0;
+    margin: 2rem 0.5rem;
     text-align: center;
-    font-weight: 600;
-    background-image: linear-gradient(to right, rgb(177, 212, 169), rgb(252, 206, 170), rgb(237, 152, 19), rgb(252, 206, 170), rgb(84,188,65), rgb(177, 212, 169));
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, rgb(177, 212, 169), rgb(252, 206, 170), rgb(237, 152, 19), rgb(218, 175, 142), rgb(70, 152, 87), rgb(177, 212, 169));
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -13,8 +17,9 @@
 .section-subtitle{
     text-align: center;
     text-shadow: 5px 5px 5px rgb(226, 217, 208);
-    color: rgb(75, 68, 62);
+    color: rgb(107, 99, 91);
     font-weight: 600;
+    font-family: 'Arvo', serif;
     border-bottom: 5px dotted rgb(226, 217, 208);
     padding-bottom: 1rem;
     border-top: 5px dotted rgb(226, 217, 208);
@@ -35,16 +40,6 @@
     border: 5px solid rgb(226, 217, 208);
     background-image: linear-gradient(to bottom, white, rgb(226, 217, 208));
 }
-/* testing */
-.recipe-unit:active{
-    transform: scale(1.2);
-    border: 8px solid transparent;
-    box-shadow: 0px 5px 10px rgb(170, 170, 170);
-}
-.recipe-unit:active .recipe-unit-text, .recipe-unit:active .recipe-unit-text p{
-    background-color: transparent;
-    color: transparent;
-}
 .recipe-unit-img{
     width: 100%;
 }
@@ -58,12 +53,31 @@
     text-align: center;
     font-size: 0.8rem;
 }
+.modal-content{
+    background-image: linear-gradient(to top, white, rgb(226, 217, 208));
+    border-color: rgb(226, 217, 208);
+}
+.modal-title{
+    font-size: 1.1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+}
+.modal-body{
+    padding: 0;
+}
+.modal-footer{
+    padding: 0.25rem 0.75rem;
+}
 @media screen and (min-width: 768px){
     .recipe-unit{
         flex-basis: 30%;
     }
 }
 @media screen and (min-width: 992px){
+    .section-title{
+        margin-top: 3rem;
+        font-size: 2rem;
+    }
     .recipes{
         margin: 1rem auto;
         width: 80%;
@@ -81,9 +95,8 @@
         transition: all .4s ease-in-out;
     }
     .recipe-unit-text p{
-        color: rgb(36, 36, 35);
         font-size: 0.9rem;
-        font-weight: 600;
+        font-weight: 500;
         transition: all .4s ease-in-out;
     }
     .recipe-unit:hover{
@@ -95,5 +108,7 @@
         background-color: transparent;
         color: transparent;
     }
-    
+    .modal-title{
+        font-size: 1.2rem;
+    }
 }

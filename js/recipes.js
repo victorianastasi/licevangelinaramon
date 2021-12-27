@@ -7,10 +7,26 @@ window.addEventListener('DOMContentLoaded', (event) => {
         let acu = ``;
         for (let i = 0; i < unidad.length; i++) {
             acu += `
-            <div class="recipe-unit">
-                <img class="recipe-unit-img" src="${unidad[i].imagen}" alt="Receta">
+            <div class="recipe-unit" data-bs-toggle="modal" data-bs-target="#${id}${i}">
+                <img class="recipe-unit-img" src="${unidad[i].imagen}" alt="${unidad[i].nombre}">
                 <div class="recipe-unit-text">
                     <p>${unidad[i].nombre}</p>
+                </div>
+            </div>
+            <div class="modal fade" id="${id}${i}" tabindex="-1" aria-labelledby="${id}${i}Label" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ID i Label">${unidad[i].nombre}</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="recipe-unit-img" src="${unidad[i].imagen}" alt="${unidad[i].nombre}" width="100%" height="100%">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             `;

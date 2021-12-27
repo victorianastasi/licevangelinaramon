@@ -4,7 +4,6 @@
 .antrop-bg{
     width:100%; 
     height: 320px;
-    /* background-image: repeating-linear-gradient(-45deg, rgb(224,243,226) 0px, rgb(224,243,226) 20px, white 20px, white 22px); */
 }
 .antrop-bg-text{
     position: absolute;
@@ -17,8 +16,9 @@
 .antrop-title{
     margin: 0;
     text-align: center;
-    font-weight: 600;
-    font-family: 'Arvo', serif;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.8rem;
     color: rgb(105, 105, 105);
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -101,6 +101,7 @@
     .antrop-title{
         width: inherit;
         padding: 3rem;
+        font-size: 2.5rem;
     }
     .antrop-contact{
         width: 50%;
