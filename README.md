@@ -15,6 +15,7 @@ Página Web sobre servicios nutricionales, desarrollada con la estrategia mobile
 - Bootstrap (v 5.15.1)
 - Google Fonts
 - Fontawesome
+- Glassmorphism, neumorphism
 - Animaciones de texto
 
 ## Author
