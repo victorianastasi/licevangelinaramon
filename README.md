@@ -1,5 +1,5 @@
 # Lic. en Nutrición Evangelina Ramon
-Página Web sobre servicios nutricionales, desarrollada con la estrategia mobile first, Bootstrap, y JavaScript.
+Sitio Web sobre servicios nutricionales, desarrollada con la estrategia mobile first, Bootstrap, y JavaScript.
 
 ## Demo - Nutricionista Evangelina Ramon
 ### Web
