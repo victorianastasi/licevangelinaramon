@@ -238,8 +238,13 @@ footer{
     .offcanvas-body{
         background-color: rgb(255,255,255);
     }
+    .navbar-expand-lg .navbar-nav{
+        flex-flow: row wrap;
+        font-size: 0.9rem;
+    }
     .nav-item{
-        width: 180px;
+        border-radius: 0px;
+        width: 140px;
         height: 64px;
         margin: 0 0.25rem;
         position: relative;
@@ -319,5 +324,13 @@ footer{
     }
     footer{
         padding: 1rem;
+    }
+}
+@media screen and (min-width: 1200px){
+    .navbar-expand-lg .navbar-nav{
+        font-size: 1rem;
+    }
+    .nav-item{
+        width: 180px;
     }
 }
