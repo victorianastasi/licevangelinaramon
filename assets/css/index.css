@@ -63,7 +63,7 @@ header{
     padding: 0;
 }
 .nav-img{
-    width: 60%;
+    height: 75px;
 }
 .nav-menu{
     font-family: 'Arvo', serif;
@@ -85,19 +85,26 @@ header{
     background-color: rgb(255,255,255);
     background-image: none;
     border: 3px solid rgb(252, 206, 170);
+    max-width: 255px;
 }
 .navbar-nav .nav-link{
     padding-left: 8px;
     padding-right: 8px;
+    font-size: 0.9rem;
+}
+.navbar-nav .nav-item .nav-link.active{
+    color: rgb(237, 152, 19);
 }
 .offcanvas-end{
     width: 82%;
 }
 .offcanvas-body{
     background-color: rgb(253, 239, 228);
+    background-image: linear-gradient(45deg, white, transparent);
 }
 .offcanvas-header{
     padding: 2rem 1rem;
+    background-color: rgb(255, 255, 255);
 }
 .offcanvas-title{
     color: rgb(136, 124, 112);
@@ -109,8 +116,10 @@ header{
     bottom: 10px;
     right: 10px;
     display: none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.9rem;
     background-color: rgba(84,188,65, 0.8);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
 }
 .btnTop-icon{
     color: white;
@@ -132,10 +141,13 @@ header{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.1rem;
 }
+.section-carousel{
+    height: calc(100vh - 75px);
+}
 .carousel-img{
     display: block;
     background-image: url("../../img/bg-alim.jpg");
-    height: 80vh;
+    height: calc(100vh - 75px);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -151,6 +163,10 @@ header{
 }
 .carousel-img-4{
     background-image: url("../../img/bg-treatm.jpg");
+}
+.carousel-img-5{
+    background-image: url("../../img/bg-turnos.jpg");
+    background-position: top;
 }
 .carousel-caption{
     background-color: rgba(0, 0, 0, 0.2);
@@ -193,8 +209,13 @@ footer{
     text-align: center;
     margin: 2rem 0 1rem 0;
 }
+.footer-info-icons, .footer-info-maps{
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .footer-icon{
-    width: 15%;
+    width: 3.3rem;
     margin: 0 2rem;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     border-radius: 16px;
@@ -211,21 +232,15 @@ footer{
     margin: 2rem 0 1rem 0;
 }
 .footer-text-small{
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     margin-top: 2rem;
+    color: rgb(105, 105, 105);
+    font-family: 'Raleway', sans-serif;
 }
 @media screen and (min-width: 576px){
-    .footer-icon{
-        width: 10%;
-    }
     .navbar-nav .nav-link{
         padding-left: 0;
         padding-right: 0;
-    }
-}
-@media screen and (min-width: 768px){
-    .footer-icon{
-        width: 8%;
     }
 }
 @media screen and (min-width: 992px){
@@ -234,6 +249,10 @@ footer{
     }
     .navbar-brand{
         text-align: center;
+        padding-left: 1rem;
+    }
+    .nav-img{
+        height: 90px;
     }
     .offcanvas-body{
         background-color: rgb(255,255,255);
@@ -244,7 +263,7 @@ footer{
     }
     .nav-item{
         border-radius: 0px;
-        width: 140px;
+        width: 130px;
         height: 64px;
         margin: 0 0.25rem;
         position: relative;
@@ -276,8 +295,15 @@ footer{
         transform: scaleY(1);
         transform-origin: top;  
     }
+    .navbar-nav .nav-link{
+        font-size: 0.8rem;
+    }
+    .section-carousel{
+        height: calc(100vh - 90px);
+    }
     .carousel-img{
         height: 86vh;
+        height: calc(100vh - 90px);
     }
     .carousel-caption{
         top: 20%;
@@ -293,14 +319,15 @@ footer{
         margin: 1rem auto 0 auto;
         font-size: 1.2rem;
     }
+    .carousel-caption-text-5{
+        width: unset;
+    }
     .btnTop{
         color: white;
         position: fixed;
         bottom: 20px;
         right: 30px;
         display: none;
-        padding: 0.75rem 1.25rem;
-        background-color: rgba(84,188,65, 0.8);
     }
     .btnTop-icon{
         color: white;
@@ -309,28 +336,40 @@ footer{
     .footer-info{
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: flex-start;
-    }
-    .footer-info-icons, .footer-info-maps{
-        width: 40%;
     }
     .footer-map{
         width: 100%;
     }
     .footer-icon{
-        margin-top: 2rem;
-        width: 10%;
+        margin-top: 1.5rem;
     }
     footer{
         padding: 1rem;
+    }
+    .footer-info-icons, .footer-info-maps{
+        max-width: 300px;
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
     }
 }
 @media screen and (min-width: 1200px){
     .navbar-expand-lg .navbar-nav{
         font-size: 1rem;
     }
+    .navbar-brand{
+        padding-left: 2rem;
+    }
     .nav-item{
-        width: 180px;
+        width: 150px;
+        margin: 0 0.75rem;
+    }
+    .navbar-nav .nav-link{
+        font-size: 0.9rem;
+    }
+    .footer-info-icons, .footer-info-maps{
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 }

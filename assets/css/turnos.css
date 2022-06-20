@@ -1,0 +1,80 @@
+.turnos{
+    background: url("../../img/turnos.jpg") center/cover no-repeat;
+    padding: 2rem 1rem 1rem 1rem;
+    font-family: 'Raleway', sans-serif;
+}
+.turnos-box{
+    margin: 0 0.5rem;
+    padding: 3rem 2rem 2rem 2rem;
+    border: 3px solid rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 20px rgb(45, 45, 45);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 30px;
+    text-align: center;
+}
+.turnos-title{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: linear-gradient(to right, rgb(18, 18, 18), rgb(62, 62, 62), rgb(75, 75, 75), rgb(18, 18, 18));
+    text-transform: none;
+}
+.turnos-title > span{
+    color: orange;
+}
+.turnos-icon{
+    width: 3.3rem;
+    margin: 0.5rem 1rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    transition: all 0.3s;
+}
+.turnos-icon:hover{
+    transform: scale(1.2);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.turnos-text{
+    margin-top: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.turnos-maps{
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.turnos-map{
+    width: 90%;
+}
+.turnos-text-map{
+    margin: 1rem 0;
+}
+.turnos-text-small{
+    font-size: 0.6rem;
+    margin-top: 3rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.95);
+}
+@media screen and (min-width: 768px){
+    .turnos-box{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 992px){
+    .turnos-maps{
+        display: inline-block;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+@media screen and (min-width: 1200px){
+    .turnos-box{
+        width: 65%;
+    }
+}
