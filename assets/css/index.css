@@ -302,7 +302,6 @@ footer{
         height: calc(100vh - 90px);
     }
     .carousel-img{
-        height: 86vh;
         height: calc(100vh - 90px);
     }
     .carousel-caption{

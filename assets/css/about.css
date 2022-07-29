@@ -22,7 +22,7 @@
     padding: 2rem;
     text-align: center;
     background-color: rgb(255, 247, 238);
-    background-image: linear-gradient(to bottom, rgb(228, 217, 205), rgb(255, 247, 238));
+    background-image: linear-gradient(to bottom, rgba(235,202,187, 0.5), rgb(255, 247, 238));
     z-index: -1;
 }
 .about-text p{
@@ -33,7 +33,7 @@
     font-family: 'Josefin Sans', sans-serif;
     letter-spacing: 0.2rem;
     font-size: 1.6rem;
-    margin: 4rem 0 2rem 0;
+    margin: 2rem 0;
 }
 @media screen and (min-width: 576px){
     .about-pic-img{
