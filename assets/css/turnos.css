@@ -60,6 +60,17 @@
     text-align: center;
     color: rgba(255, 255, 255, 0.95);
 }
+a.btn-maps{
+    box-shadow: 5px 5px 5px rgb(129, 129, 129);
+    color: rgb(221, 145, 2);
+    transition: 0.2s;
+}
+.btn-maps:hover{
+    background-color: orange;
+    border-color: orange;
+    color: white;
+    
+}
 @media screen and (min-width: 768px){
     .turnos-box{
         width: 80%;
